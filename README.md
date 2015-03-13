@@ -4,9 +4,9 @@ A *very* opinionated base template for new [Meteor](http://www.meteor.com) proje
 
 ## Project Structure
 
- - **client:** contents *only* runs on the `client`
- - *server:** contents *only* runs on the `server`
- - **lib:** contents runs on *both* `client` & `server` *and* runs first
+ - **client:** contents *only* run on the `client`
+ - **server:** contents *only* run on the `server`
+ - **lib:** contents run on *both* `client` & `server` and *runs first*
  - **public:** place for static assets such as images
  
 
