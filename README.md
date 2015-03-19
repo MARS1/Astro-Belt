@@ -1,6 +1,6 @@
-# Astro Belt by [Jesse Florig](http://www.jesseflorig.com)
+# Astro Belt
 
-A *very* opinionated base template for new [Meteor](http://www.meteor.com) projects.
+A *very* opinionated starting point for [Meteor](http://www.meteor.com) projects.
 
 ## Project Structure
 
@@ -26,7 +26,7 @@ A *very* opinionated base template for new [Meteor](http://www.meteor.com) proje
 
  - Iron:Router
  
-**Development Tools
+**Development Tools**
 
 - Mongol 
 
@@ -41,7 +41,3 @@ A *very* opinionated base template for new [Meteor](http://www.meteor.com) proje
   - [x] ~~Stellar.js~~
   - [x] ~~Wow.js~~
   - [ ] Famous or Materialize (CSS animations)
-
-## Contributing
-
-Please open an issue before working on functionality or submitting a pull request. Our goal here is transparency and good communication!
