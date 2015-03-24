@@ -5,12 +5,16 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 msavin:mongol
+sacha:spin
+alanning:roles
 twbs:bootstrap-noglyph
 fortawesome:fontawesome
 iron:router
+accounts-password
+ian:accounts-ui-bootstrap-3
 cryptoquick:stylus-multi
-noorderstorm:stellar
 noorderstorm:wow
+noorderstorm:stellar
+
+
