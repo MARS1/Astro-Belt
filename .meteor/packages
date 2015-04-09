@@ -5,16 +5,19 @@
 # but you can also edit it by hand.
 
 meteor-platform
-msavin:mongol
+coffeescript
+email
+random
+accounts-password
+mrt:moment
+cmather:handlebars-server
 sacha:spin
 alanning:roles
 twbs:bootstrap-noglyph
 fortawesome:fontawesome
 iron:router
-accounts-password
 ian:accounts-ui-bootstrap-3
 cryptoquick:stylus-multi
-noorderstorm:wow
-noorderstorm:stellar
-
-
+msavin:mongol
+msavin:jetsetter
+underscore
