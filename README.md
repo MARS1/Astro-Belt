@@ -58,6 +58,7 @@ Most (if not all) of these features are/will be accomplished by overriding defau
  - [ ] Manage ERRYTHAANG
 - [ ] Example `favicon` set
 - [ ] Starter tests :shit:
+- [ ] Include scaffolding CLI
 
 ### Development Tools
 

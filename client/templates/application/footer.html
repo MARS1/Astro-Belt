@@ -1,7 +1,25 @@
 <template name="footer">
   <footer>
     <div class="container">
-      Made with <i class="fa fa-heart"></i> by <a href="http://jesseflorig.com">@jesseflorig</a>
+      <div class="row">
+        <div class="col-md-4">
+          {{> socialLinks}}
+        </div>
+        <div class="col-md-4 col-center">
+          {{> sourceLink}}
+        </div>
+        <div class="col-md-4 col-right">
+          {{> authorLink}}
+        </div>
+      </div>
     </div>
   </footer>
+</template>
+
+<template name="sourceLink">
+  View source on <i class="fa fa-github"></i> <a href="">GitHub</a>
+</template>
+
+<template name="authorLink">
+  <i class="fa fa-code"></i> with <i class="fa fa-heart-o"></i> by <a href="http://jesseflorig.com">@jesseflorig</a>
 </template>

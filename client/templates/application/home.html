@@ -1,11 +1,11 @@
 <template name="home">
 	<div class="jumbotron">
-		<div class="container center">
+		<div class="container col-center">
 			<h1>Hello World</h1>
 			<p>Now you're cooking with Astro Belt</p>
 			<p>
 				{{#unless currentUser}}
-				  <button class="btn btn-lg btn-primary">Signup for the Beta</button>
+				  {{> betaOptions}}
 				{{/unless}}
 			</p>
 		</div>
