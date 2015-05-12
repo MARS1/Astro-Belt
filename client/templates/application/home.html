@@ -1,13 +1,45 @@
 <template name="home">
-	<div class="jumbotron">
-		<div class="container col-center">
-			<h1>Hello World</h1>
-			<p>Now you're cooking with Astro Belt</p>
-			<p>
-				{{#unless currentUser}}
-				  {{> betaOptions}}
-				{{/unless}}
-			</p>
-		</div>
-	</div>
+  <div class="jumbotron">
+    <div class="container col-center">
+      <h1>Welcome to Astro-Belt</h1>
+      <p>Astro-: <em>relating to the stars, celestial objects, or outer space.</em></p>
+      <p>Belt: <em>move quickly in a specified direction.</em></p>
+      <p>
+        {{#unless currentUser}}
+          {{> betaButtons}}
+        {{/unless}}
+      </p>
+    </div>
+  </div><!--/.jumbotron-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>
+          <i class="fa fa-bullhorn"></i>
+          Strong Opinions
+        </h2>
+        <p>
+          Astro-Belt comes with some very strong opinions baked right in. These opinions include <a href="http://www.coffeescript.org">Coffeescript</a>, <a href="https://learnboost.github.io/stylus/">Stylus</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, and <a href="https://github.com/iron-meteor/iron-router">Iron Router</a>.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>
+          <i class="fa fa-rocket"></i>
+          Advanced Features
+        </h2>
+        <p>
+          User management, role-based permissions, and issuing beta tokens are all common tasks to ease you into production. These features are available right out of the box.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>
+          <i class="fa fa-users"></i>
+          Open Source
+        </h2>
+        <p>
+          As much as we want to focus on the business logic, opinions differ and features are not always relevant. In either case, you can fork the source and roll your own.
+        </p>
+      </div>
+    </div>
+  </div>
 </template>

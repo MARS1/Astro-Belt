@@ -1,25 +1,40 @@
 <template name="footer">
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          {{> socialLinks}}
-        </div>
-        <div class="col-md-4 col-center">
-          {{> sourceLink}}
-        </div>
-        <div class="col-md-4 col-right">
-          {{> authorLink}}
+  {{#with AppData}}
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            {{> socialLinks}}
+          </div>
+          <div class="col-md-6 col-center">
+            {{> sourceLink}}
+          </div>
+          <div class="col-md-3 col-right">
+            {{> authorLink}}
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  {{/with}}
+</template>
+
+<template name="socialLinks">
+  <ul class="social-links">
+    {{#each social}}
+      <li>
+        <a href="{{url}}">
+          <i class="fa fa-{{icon}}"></i>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
 </template>
 
 <template name="sourceLink">
-  View source on <i class="fa fa-github"></i> <a href="">GitHub</a>
+  <p>Code licensed under <a href="{{liscence.url}}">{{liscence.name}} Liscence</a>.</p>
+  <p>View source on <a href="{{source.url}}">{{source.name}}</a></p>
 </template>
 
 <template name="authorLink">
-  <i class="fa fa-code"></i> with <i class="fa fa-heart-o"></i> by <a href="http://jesseflorig.com">@jesseflorig</a>
+  <i class="fa fa-code"></i> with <i class="fa fa-heart-o"></i> by <a href="{{AppData.author.url}}">{{AppData.author.name}}</a>
 </template>

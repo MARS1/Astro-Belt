@@ -8,11 +8,11 @@ A *very* opinionated boilerplate for [Meteor](http://www.meteor.com).
 
 All of the default Meteor goodness, and then some:
 
-- [**Stylus**](learnboost.github.io/stylus) CSS preprocessor
-- [**Bootstrap**](getbootstrap.com) *(no-glyph)* grid & components
-- [**Font Awesome**](fortawesome.github.io/Font-Awesome) icons
-- [**Coffescript**](coffeescript.org) Javascript shorthand
-- [**Iron Router**](github.com/iron-meteor/iron-router)
+- [**Stylus**](http://learnboost.github.io/stylus) CSS preprocessor
+- [**Bootstrap**](http://getbootstrap.com) *(no-glyph)* grid & components
+- [**Font Awesome**](http://fortawesome.github.io/Font-Awesome) icons
+- [**Coffescript**](http://coffeescript.org) Javascript shorthand
+- [**Iron Router**](http://github.com/iron-meteor/iron-router)
 
 ## Clone & Install
 

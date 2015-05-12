@@ -16,8 +16,10 @@ alanning:roles
 twbs:bootstrap-noglyph
 fortawesome:fontawesome
 iron:router
-ian:accounts-ui-bootstrap-3
 cryptoquick:stylus-multi
-msavin:mongol
-msavin:jetsetter
 underscore
+ian:accounts-ui-bootstrap-3
+meteortoys:allthings
+themeteorchef:jquery-validation
+check
+http
