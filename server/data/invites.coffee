@@ -3,10 +3,10 @@ Meteor.methods(
   addToInvitesList: (invitee) ->
     check(invitee, {email: String, requested: Number, invited: Boolean})
 
-    emailExists = Invites.findOne({"email": newInvitee})
+    emailExists = Invites.findOne({"email": invitee.email})
 
     if emailExists
-      throw new Meteor.Error "email-exists", "It looks like you've already signed up for our beta. Thanks!"
+      throw new Meteor.Error "email-exists", "Invite already requested!"
     else
       inviteCount = Invites.find({},{fields: {"_id": 1}}).count()
       invitee.inviteNumber = inviteCount + 1
@@ -41,8 +41,8 @@ Meteor.methods(
         Email.send(
           to: invitee.email
           from: "AstroBelt <invites@astrobelt.com>"
-          subject: "Welcome to AstroBelt!"
-          html: Handlebars.templates['send-invite'](
+          subject: "Welcome to Astro-Belt!"
+          html: Handlebars.templates['send_invite'](
             token: token
             url: url
             urlWithToken: url + "/#{token}"
