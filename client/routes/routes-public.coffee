@@ -6,10 +6,11 @@ Router.route('home',
     @next()
 )
 
-Router.route('signup',
+Router.route('singup',
   path: '/signup'
   name: 'signup'
   onBeforeAction: ->
+    console.log 'This on?'
     Session.set 'currentRoute', 'signup'
     Session.set 'betaToken', ''
     @next()
@@ -17,7 +18,7 @@ Router.route('signup',
 
 Router.route('signup/:token',
   path: '/signup/:token'
-  name: 'signupToken'
+  template: 'signup'
   onBeforeAction: ->
     Session.set 'currentRoute','signup'
     Session.set 'betaToken', @params.token
