@@ -10,7 +10,6 @@ Router.route('singup',
   path: '/signup'
   name: 'signup'
   onBeforeAction: ->
-    console.log 'This on?'
     Session.set 'currentRoute', 'signup'
     Session.set 'betaToken', ''
     @next()

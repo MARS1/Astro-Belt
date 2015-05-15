@@ -6,7 +6,7 @@ Meteor.methods(
     emailExists = Invites.findOne({"email": invitee.email})
 
     if emailExists
-      throw new Meteor.Error "email-exists", "Invite already requested!"
+      throw new Meteor.Error "email-exists", "Invite already requested for {invitee.email}!"
     else
       inviteCount = Invites.find({},{fields: {"_id": 1}}).count()
       invitee.inviteNumber = inviteCount + 1

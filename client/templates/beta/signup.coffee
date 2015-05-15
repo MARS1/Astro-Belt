@@ -1,5 +1,2 @@
-Template.signup.onRendered( ->
-  token = Session.get('betaToken')
+Template.signup.rendered = ->
   $('#beta-redeem-modal').modal('show')
-  $('#redeem-token').val(token)
-)

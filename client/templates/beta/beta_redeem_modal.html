@@ -7,27 +7,27 @@
           <h4 class="modal-title" id="myModalLabel">Redeem beta token</h4>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="beta-redeem-form">
             <div class="form-group">
               <label for="redeem-email">Email address</label>
-              <input type="email" id="redeem-email" class="form-control" placeholder="Enter your e-mail address">
+              <input type="email" id="redeem-email" class="form-control" name="emailAddressSignup" placeholder="Enter your e-mail address">
             </div>
             <div class="form-group">
               <label for="redeem-password">Password</label>
-              <input type="password" id="redeem-password" class="form-control" placeholder="Enter a password">
+              <input type="password" id="redeem-password" class="form-control" name="password" placeholder="Enter a password">
             </div>
             <div class="form-group">
               <label for="redeem-verify">Verify password</label>
-              <input type="password" id="redeem-verify" class="form-control" placeholder="Verify password">
+              <input type="password" id="redeem-verify" class="form-control" name="verify" placeholder="Verify password">
             </div>
             <div class="form-group">
               <label for="redeem-token">Beta invite token</label>
-              <input type="text" id="redeem-token" class="form-control" placeholder="Enter beta token">
+              <input type="text" id="redeem-token" class="form-control" name="betaToken" placeholder="Enter beta token" value="{{betaToken}}">
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Create account</button>
+          <button type="button" id="beta-redeem-submit" class="btn btn-primary">Create account</button>
         </div>
       </div>
     </div>
