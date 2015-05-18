@@ -1,6 +1,10 @@
-# Astro Belt
+# Astro-Belt
 
 A *very* opinionated boilerplate for [Meteor](http://www.meteor.com).
+
+**Astro-**: relating to the stars, celestial objects, or outer space.
+
+**Belt**: move quickly in a specified direction.
 
 *Alligators 'gonna alligate* :crocodile:
 
@@ -11,7 +15,7 @@ All of the default Meteor goodness, and then some:
 - [**Stylus**](http://learnboost.github.io/stylus) CSS preprocessor
 - [**Bootstrap**](http://getbootstrap.com) *(no-glyph)* grid & components
 - [**Font Awesome**](http://fortawesome.github.io/Font-Awesome) icons
-- [**Coffescript**](http://coffeescript.org) Javascript shorthand
+- [**Coffescript**](http://coffeescript.org) JavaScript shorthand
 - [**Iron Router**](http://github.com/iron-meteor/iron-router)
 
 ## Clone & Install
@@ -20,6 +24,7 @@ Assuming you have Git and Meteor installed:
 
 ```
 git clone https://github.com/jesseflorig/Astro-Belt.git <your-app-name>
+
 cd <your-app-name> && meteor
 ```
 
@@ -41,28 +46,28 @@ I'm still looking for that perfect balance of logical separation. Not too thin; 
 
 Most (if not all) of these features are/will be accomplished by overriding defaults or using existing packages. New packages will be created as needed.
 
-- [ ] Application constants
+- [ ] CLI scaffolding
+- [ ] Dynamic dev environment ready
 - [ ] SEO tricks
 - [ ] Starter page layout templates (*in progress*)
-- [ ] Starter route structure (*in progress*)
+- [x] Starter route structure
 - [x] Default accounts via `server/fixtures.coffee`
 - [x] Disable client account creation via `lib/config.coffee`
-- [ ] Anyone can request invite token (*in progress*)
-- [ ] Admin can approve invite tokens (*in progress*)
+- [x] Beta invite system
 - [ ] Dynamic menus
-- [ ] User dashboard
+- [x] User dashboard
  - [ ] Manage profile
  - [ ] Gravatar support
- - [ ] View other users
 - [ ] Admin Dashboard
  - [ ] Manage ERRYTHAANG
 - [ ] Example `favicon` set
 - [ ] Starter tests :shit:
-- [ ] Include scaffolding CLI
 
 ### Development Tools
 
-- [x] [Mongol](github.com/msavin/Mongol) - Visual editor for client documents
+**Open Source**
+
+- [x] [Mongol](github.com/msavin/Mongol) - Visual editor for client-side Mongo documents
 - [x] [JetSetter](github.com/msavin/JetSetter) - Visual editor for sessions
 
 ## Contributing
@@ -73,8 +78,8 @@ If you have your own opinions and/or suggestions, please open an [issue](https:/
 
 ## MOAR Boilerplates
 
-- [Void](github.com/SachaG/Void) by [Sacha Greif](sachagreif.com/)
-- [iron-cli](github.com/iron-meteor/iron-cli) (*formerly em*) by [Evented Mind](eventedmind.com/)
-- [meteor-boilerplate](github.com/Differential/meteor-boilerplate) by [Differential](differential.com/)
-- [Opinionated Skeleton](github.com/jamesdwilson/meteor-jw-opinionated-skeleton) by [James Wilson](github.com/jamesdwilson)
-- [meteor-boilerplate](github.com/matteodem/meteor-boilerplate) by [Matteo De Micheli](github.com/matteodem)
+- [Void](http://github.com/SachaG/Void) by [Sacha Greif](sachagreif.com/)
+- [iron-cli](http://github.com/iron-meteor/iron-cli) (*formerly em*) by [Evented Mind](eventedmind.com/)
+- [meteor-boilerplate](http://github.com/Differential/meteor-boilerplate) by [Differential](differential.com/)
+- [Opinionated Skeleton](http://github.com/jamesdwilson/meteor-jw-opinionated-skeleton) by [James Wilson](github.com/jamesdwilson)
+- [meteor-boilerplate](http://github.com/matteodem/meteor-boilerplate) by [Matteo De Micheli](github.com/matteodem)
