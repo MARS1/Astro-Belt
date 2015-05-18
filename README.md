@@ -54,12 +54,14 @@ Most (if not all) of these features are/will be accomplished by overriding defau
 - [x] Default accounts via `server/fixtures.coffee`
 - [x] Disable client account creation via `lib/config.coffee`
 - [x] Beta invite system
-- [ ] Dynamic menus
 - [x] User dashboard
  - [ ] Manage profile
  - [ ] Gravatar support
 - [ ] Admin Dashboard
- - [ ] Manage ERRYTHAANG
+ - [ ] Manage custom pages
+ - [ ] MOAR... (TBD)
+- [ ] Simple Blog
+ - [ ] Karma-style comments
 - [ ] Example `favicon` set
 - [ ] Starter tests :shit:
 
@@ -67,8 +69,8 @@ Most (if not all) of these features are/will be accomplished by overriding defau
 
 **Open Source**
 
-- [x] [Mongol](github.com/msavin/Mongol) - Visual editor for client-side Mongo documents
-- [x] [JetSetter](github.com/msavin/JetSetter) - Visual editor for sessions
+- [x] [Mongol](https://github.com/msavin/Mongol) - Visual editor for client-side Mongo documents
+- [x] [JetSetter](https://github.com/msavin/JetSetter) - Visual editor for sessions
 
 ## Contributing
 
