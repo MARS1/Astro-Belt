@@ -1,12 +1,18 @@
-Router.route('dashboard',
+Router.route 'dashboard',
   path: '/dashboard'
   name: 'dashboard'
   onBeforeAction: ->
     Session.set 'currentRoute', 'dashboard'
     @next()
-)
 
-Router.route('invites',
+Router.route 'samplePage',
+  path: '/samplePage'
+  name: 'samplePage'
+  onBeforeAction: ->
+    Session.set 'currentRoute', 'samplePage'
+    @next()
+
+Router.route 'invites',
   path: '/invites'
   name: 'invites'
   waitOn: ->
@@ -14,4 +20,3 @@ Router.route('invites',
   onBeforeAction: ->
     Session.set 'currentRoute', 'invites'
     @next()
-)
