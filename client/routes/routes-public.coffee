@@ -6,7 +6,16 @@ Router.route('home',
     @next()
 )
 
-Router.route('singup',
+Router.route('request',
+  path: '/request'
+  name: 'request'
+  onBeforeAction: ->
+    Session.set 'currentRoute', 'request'
+    Session.set 'betaToken', ''
+    @next()
+)
+
+Router.route('signup',
   path: '/signup'
   name: 'signup'
   onBeforeAction: ->
