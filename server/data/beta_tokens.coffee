@@ -8,8 +8,7 @@ Meteor.methods(
 
     # Attempt to find a user with a matching email and token.
     testInvite = Invites.findOne({email: user.email, token: user.betaToken}, {fields: {"_id": 1, "email": 1, "token": 1}})
-    console.log 'user:',user
-    console.log 'test:',testInvite
+    
     # If the email and token do not match, throw an error. If the email and
     # token do match, invalidate the token by deleting it and return true. We
     # also want to flag the invite as having an account created.
